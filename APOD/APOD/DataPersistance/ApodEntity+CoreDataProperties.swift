@@ -1,6 +1,6 @@
 //
 //  ApodEntity+CoreDataProperties.swift
-//  Sample
+//  APOD
 //
 //  Created by Amarnath Gopireddy on 4/14/21.
 //
@@ -19,6 +19,7 @@ extension ApodEntity {
     @NSManaged public var image: Data?
     @NSManaged public var title: String?
     @NSManaged public var explanation: String?
+    @NSManaged public var date: String?
 
 }
 

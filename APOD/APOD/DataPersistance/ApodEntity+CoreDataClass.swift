@@ -1,6 +1,6 @@
 //
 //  ApodEntity+CoreDataClass.swift
-//  Sample
+//  APOD
 //
 //  Created by Amarnath Gopireddy on 4/14/21.
 //

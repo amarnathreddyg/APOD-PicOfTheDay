@@ -16,6 +16,14 @@
 		C43C59452626BB330050FEB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43C59432626BB330050FEB3 /* LaunchScreen.storyboard */; };
 		C43C59502626BB330050FEB3 /* APODTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C594F2626BB330050FEB3 /* APODTests.swift */; };
 		C43C595B2626BB330050FEB3 /* APODUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C595A2626BB330050FEB3 /* APODUITests.swift */; };
+		C43C59FD2626BDF20050FEB3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C59FC2626BDF20050FEB3 /* APIClient.swift */; };
+		C43C5A072626BE020050FEB3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A062626BE020050FEB3 /* ImageDownloader.swift */; };
+		C43C5A0C2626BE0C0050FEB3 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A0B2626BE0C0050FEB3 /* DataBaseHelper.swift */; };
+		C43C5A112626BE190050FEB3 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A102626BE190050FEB3 /* NetworkStatus.swift */; };
+		C43C5A1A2626BE360050FEB3 /* ApodEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A182626BE360050FEB3 /* ApodEntity+CoreDataProperties.swift */; };
+		C43C5A1B2626BE360050FEB3 /* ApodEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A192626BE360050FEB3 /* ApodEntity+CoreDataClass.swift */; };
+		C43C5A202626BE3E0050FEB3 /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A1F2626BE3E0050FEB3 /* Apod.swift */; };
+		C43C5A252626BE480050FEB3 /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43C5A242626BE480050FEB3 /* APODViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +59,14 @@
 		C43C59562626BB330050FEB3 /* APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C43C595A2626BB330050FEB3 /* APODUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODUITests.swift; sourceTree = "<group>"; };
 		C43C595C2626BB330050FEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43C59FC2626BDF20050FEB3 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C43C5A062626BE020050FEB3 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		C43C5A0B2626BE0C0050FEB3 /* DataBaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		C43C5A102626BE190050FEB3 /* NetworkStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		C43C5A182626BE360050FEB3 /* ApodEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ApodEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C43C5A192626BE360050FEB3 /* ApodEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ApodEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C43C5A1F2626BE3E0050FEB3 /* Apod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		C43C5A242626BE480050FEB3 /* APODViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,10 @@
 				C43C59352626BB310050FEB3 /* AppDelegate.swift */,
 				C43C59372626BB310050FEB3 /* SceneDelegate.swift */,
 				C43C59392626BB310050FEB3 /* ViewController.swift */,
+				C43C59F82626BD710050FEB3 /* DataPersistance */,
+				C43C59F52626BD460050FEB3 /* Models */,
+				C43C59F62626BD4F0050FEB3 /* ViewModels */,
+				C43C59F72626BD570050FEB3 /* NetworkLayer */,
 				C43C593B2626BB310050FEB3 /* Main.storyboard */,
 				C43C59412626BB330050FEB3 /* Assets.xcassets */,
 				C43C59432626BB330050FEB3 /* LaunchScreen.storyboard */,
@@ -129,6 +149,42 @@
 				C43C595C2626BB330050FEB3 /* Info.plist */,
 			);
 			path = APODUITests;
+			sourceTree = "<group>";
+		};
+		C43C59F52626BD460050FEB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C43C5A1F2626BE3E0050FEB3 /* Apod.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C43C59F62626BD4F0050FEB3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C43C5A242626BE480050FEB3 /* APODViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C43C59F72626BD570050FEB3 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				C43C5A102626BE190050FEB3 /* NetworkStatus.swift */,
+				C43C5A062626BE020050FEB3 /* ImageDownloader.swift */,
+				C43C59FC2626BDF20050FEB3 /* APIClient.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		C43C59F82626BD710050FEB3 /* DataPersistance */ = {
+			isa = PBXGroup;
+			children = (
+				C43C5A0B2626BE0C0050FEB3 /* DataBaseHelper.swift */,
+				C43C5A192626BE360050FEB3 /* ApodEntity+CoreDataClass.swift */,
+				C43C5A182626BE360050FEB3 /* ApodEntity+CoreDataProperties.swift */,
+			);
+			path = DataPersistance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +317,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43C5A1B2626BE360050FEB3 /* ApodEntity+CoreDataClass.swift in Sources */,
 				C43C593A2626BB310050FEB3 /* ViewController.swift in Sources */,
+				C43C5A252626BE480050FEB3 /* APODViewModel.swift in Sources */,
+				C43C5A112626BE190050FEB3 /* NetworkStatus.swift in Sources */,
+				C43C5A1A2626BE360050FEB3 /* ApodEntity+CoreDataProperties.swift in Sources */,
+				C43C5A202626BE3E0050FEB3 /* Apod.swift in Sources */,
 				C43C59402626BB310050FEB3 /* APOD.xcdatamodeld in Sources */,
+				C43C5A072626BE020050FEB3 /* ImageDownloader.swift in Sources */,
+				C43C5A0C2626BE0C0050FEB3 /* DataBaseHelper.swift in Sources */,
 				C43C59362626BB310050FEB3 /* AppDelegate.swift in Sources */,
+				C43C59FD2626BDF20050FEB3 /* APIClient.swift in Sources */,
 				C43C59382626BB310050FEB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
