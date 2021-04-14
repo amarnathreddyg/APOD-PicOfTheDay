@@ -2,7 +2,6 @@
 
 ![Language](https://img.shields.io/badge/language-Swift%205-orange.svg)
 ![IDE](https://img.shields.io/badge/IDE-XCoce%2012.4-red.svg)
-![IDE](https://img.shields.io/badge/IDE-XCoce%2012.4-red.svg)
 
 # Steps to Test the App
 
@@ -21,3 +20,8 @@
 - This can be improved with appropripriate comments whereever required
 -  We can have an extra feature to select date from a date picker and POD for that date
 - Can be improved by writing test cases
+
+<img width="471" alt="Screen Shot 2021-04-14 at 4 15 04 PM" src="https://user-images.githubusercontent.com/13797884/114721232-601a0b80-9d56-11eb-9b91-bec220b282a3.png">
+
+<img width="471" alt="Screen Shot 2021-04-09 at 3 40 53 PM" src="https://user-images.githubusercontent.com/13797884/114721294-6c9e6400-9d56-11eb-8924-637d3c86940a.png">
+
